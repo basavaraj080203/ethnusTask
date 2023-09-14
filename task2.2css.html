@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horizontal Navigation Bar</title>
+    <style>
+        .horizontal-navbar {
+            background-color: #DFF0D8; 
+            color: #007BFF; 
+        }
+
+        .horizontal-navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .horizontal-navbar li {
+            display: inline-block;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+        .highlighted {
+            background-color: yellow;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="horizontal-navbar" id="horizontal-navbar">
+        <ul>
+            <li onclick="highlight(this)">Home</li>
+            <li onclick="highlight(this)">Java</li>
+            <li onclick="highlight(this)">CSS</li>
+            <li onclick="highlight(this)">HTML</li>
+            <li onclick="highlight(this)">Bootstrap</li>
+        </ul>
+    </div>
+
+    <script>
+        function highlight(item) {
+            var items = document.querySelectorAll('.horizontal-navbar li');
+            items.forEach(function (element) {
+                element.classList.remove('highlighted');
+            });
+
+            item.classList.add('highlighted');
+        }
+    </script>
+</body>
+</html>

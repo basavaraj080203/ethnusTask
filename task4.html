@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nicely Organized Input Form</title>
+    <style>
+        /* CSS for styling the form */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="repassword">Re-enter Password:</label>
+        <input type="password" id="repassword" name="repassword">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
