@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 80px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: #333; 
+    padding-top: 20px; 
+    transition: width 0.3s; 
+}
+
+.nav-btn {
+    display: block; 
+    padding: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+    transition: padding 0.3s; 
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+
+.btn1:hover {
+    background-color: #FF5733;
+    width: 150px; 
+    padding-left: 20px;
+}
+
+.btn2:hover {
+    background-color: #33FF57;
+    width: 150px; 
+    padding-left: 20px; 
+}
+
+.btn3:hover {
+    background-color: #5733FF;
+    width: 150px; 
+    padding-left: 20px; 
+}
+
+.btn4:hover {
+    background-color: #FF33F4;
+    width: 150px; 
+    padding-left: 20px; 
+}
